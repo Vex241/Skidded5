@@ -682,7 +682,7 @@ if v6 and type(v7) == "table" then
                 _G.killAllConnection:Disconnect()
                 _G.killAllConnection = nil
             end
-        end):Set(true)
+        end):Set(false)
         game:GetService("Players").LocalPlayer.CharacterRemoving:Connect(function()
             if _G.killAllConnection then
                 _G.killAllConnection:Disconnect()
@@ -770,7 +770,7 @@ if v6 and type(v7) == "table" then
                 _G.deathRingConnection:Disconnect()
                 _G.deathRingConnection = nil
             end
-        end):Set(true)
+        end):Set(false)
         v95:AddTextBox("Player Name (Optional)", function(p241)
             if p241 and p241 ~= "" then
                 local v242 = vu229(p241)
@@ -798,7 +798,7 @@ if v6 and type(v7) == "table" then
                 _G.killPlayerConnection:Disconnect()
                 _G.killPlayerConnection = nil
             end
-        end):Set(true)
+        end):Set(false)
         game:GetService("Players").LocalPlayer.CharacterRemoving:Connect(function()
             if _G.deathRingConnection then
                 _G.deathRingConnection:Disconnect()
